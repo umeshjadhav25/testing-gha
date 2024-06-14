@@ -1,0 +1,16 @@
+name: test-pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: running-bash-commands
+        run: |
+          echo "I am Great"
+          echo "You are Great"
